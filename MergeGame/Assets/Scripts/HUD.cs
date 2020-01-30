@@ -12,4 +12,9 @@ public class HUD : Singleton<HUD>
     {
         scoreText.text = _score.ToString();
     }
+
+    public void ExitButton()
+    {
+        Application.Quit();
+    }
 }
