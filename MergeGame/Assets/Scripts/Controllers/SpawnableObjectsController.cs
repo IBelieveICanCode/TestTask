@@ -35,7 +35,7 @@ public class SpawnableObjectsController : MonoBehaviour
         Coord _coord = new Coord(item2.transform.position.x, item2.transform.position.y);
         int _level = item2.GetComponent<Item>().Level;
 
-        GameController.Instance.Score += item2.Score;
+        GameController.Instance.Score = item2.Score;
 
         Destroy(item1.gameObject);
         Destroy(item2.gameObject);        
